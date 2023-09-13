@@ -54,6 +54,20 @@ local plugins = {
       "nvim-telescope/telescope.nvim",
     },
   },
+  -- Plugin to set current working directory to
+  -- project root
+  {
+    "ahmedkhalf/project.nvim",
+    event = "BufEnter",
+    config = function()
+      require("project_nvim").setup {
+        -- your configuration comes here
+        -- or leave it empty to use the default settings
+        -- refer to the configuration section below in repo
+      }
+      require("telescope").load_extension "projects"
+    end,
+  },
   -- To make a plugin not be loaded
   -- {
   --   "NvChad/nvim-colorizer.lua",
