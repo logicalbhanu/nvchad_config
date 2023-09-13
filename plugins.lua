@@ -58,7 +58,7 @@ local plugins = {
   -- project root
   {
     "ahmedkhalf/project.nvim",
-    event = "BufEnter",
+    lazy = false,
     config = function()
       require("project_nvim").setup {
         -- your configuration comes here
