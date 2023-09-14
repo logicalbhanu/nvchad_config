@@ -32,7 +32,10 @@ local plugins = {
     "nvim-treesitter/nvim-treesitter",
     opts = overrides.treesitter,
   },
-
+  {
+    "NvChad/nvterm",
+    opts = overrides.nvterm,
+  },
   {
     "nvim-tree/nvim-tree.lua",
     opts = overrides.nvimtree,
