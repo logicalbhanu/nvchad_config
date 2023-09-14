@@ -17,7 +17,8 @@ M.general = {
     -- nowait is good as it tells neovim not to wait for any other keybinds
     -- that have same starting key, but it can create unusability of that
     -- keybind so use with caution
-    [";"] = { ":", "enter command mode", opts = { nowait = true } },
+    ["<leader>w"] = { "<cmd>w<cr>", "write file", opts = { nowait = true } },
+    ["<leader>q"] = { "<cmd>confirm q<cr>", "quit file", opts = { nowait = true } },
     ["<S-t>"] = { ":b#<cr>", desc = "last used buffer" },
 
     -- changing deafault workspace MappingsTable
