@@ -81,6 +81,58 @@ M.general = {
   },
 }
 
+-- changing default keybindings of nvterm
+M.nvterm = {
+  plugin = true,
+
+  t = {
+    -- toggle in terminal mode
+    ["<leader>tf"] = {
+      function()
+        require("nvterm.terminal").toggle "float"
+      end,
+      "Toggle floating term",
+    },
+
+    ["<leader>th"] = {
+      function()
+        require("nvterm.terminal").toggle "horizontal"
+      end,
+      "Toggle horizontal term",
+    },
+
+    ["<leader>tv"] = {
+      function()
+        require("nvterm.terminal").toggle "vertical"
+      end,
+      "Toggle vertical term",
+    },
+  },
+
+  n = {
+    -- toggle in normal mode
+    ["<leader>tf"] = {
+      function()
+        require("nvterm.terminal").toggle "float"
+      end,
+      "Toggle floating term",
+    },
+
+    ["<leader>th"] = {
+      function()
+        require("nvterm.terminal").toggle "horizontal"
+      end,
+      "Toggle horizontal term",
+    },
+
+    ["<leader>tv"] = {
+      function()
+        require("nvterm.terminal").toggle "vertical"
+      end,
+      "Toggle vertical term",
+    },
+  },
+}
 -- more keybinds!
 -- search core.mappings for more info on defaults
 -- keymaps
