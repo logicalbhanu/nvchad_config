@@ -1,6 +1,17 @@
 ---@type MappingsTable
 local M = {}
-
+M.disabled = {
+  n = {
+    -- disabling default workspace bindings
+    ["<leader>wa"] = "",
+    ["<leader>wl"] = "",
+    ["<leader>wr"] = "",
+    --disabling default which key info mappings
+    ["<leader>wk"] = "",
+    ["<leader>wK"] = "",
+    ["<leader>th"] = "",
+  },
+}
 M.general = {
   n = {
     -- nowait is good as it tells neovim not to wait for any other keybinds
