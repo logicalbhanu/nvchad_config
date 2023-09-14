@@ -43,6 +43,20 @@ M.general = {
       "List work[S]pace folders",
     },
 
+    -- changing default which keymaps
+    ["<leader>ka"] = {
+      function()
+        vim.cmd "WhichKey"
+      end,
+      "Which-key all keymaps",
+    },
+    ["<leader>kq"] = {
+      function()
+        local input = vim.fn.input "WhichKey: "
+        vim.cmd("WhichKey " .. input)
+      end,
+      "Which-key query lookup",
+    },
     -- better buffer navigation
     -- ["<S-h>"] = { ":bp<cr>", desc = "previous buffer" },
     -- ["<S-l>"] = { ":bn<cr>", desc = "Next buffer" },
