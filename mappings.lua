@@ -57,6 +57,8 @@ M.general = {
       end,
       "Which-key query lookup",
     },
+    -- changing default keybinding for toggling themes
+    ["<leader>tt"] = { "<cmd> Telescope themes <CR>", "Nvchad themes" },
     -- better buffer navigation
     -- ["<S-h>"] = { ":bp<cr>", desc = "previous buffer" },
     -- ["<S-l>"] = { ":bn<cr>", desc = "Next buffer" },
