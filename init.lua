@@ -5,3 +5,7 @@
 --   pattern = "*",
 --   command = "tabdo wincmd =",
 -- })
+--
+--
+-- setting custom vim options
+vim.opt.rnu = true --enable relative line-number
