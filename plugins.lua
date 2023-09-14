@@ -68,6 +68,7 @@ local plugins = {
         -- or leave it empty to use the default settings
         -- refer to the configuration section below in repo
       }
+      -- this line is to enable project support in telescope
       require("telescope").load_extension "projects"
     end,
   },
