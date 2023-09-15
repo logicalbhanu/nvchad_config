@@ -72,6 +72,9 @@ local plugins = {
       require("telescope").load_extension "projects"
     end,
   },
+
+  -- to provide surrounding change syntax
+  { "tpope/vim-surround", lazy=false },
   -- To make a plugin not be loaded
   -- {
   --   "NvChad/nvim-colorizer.lua",
