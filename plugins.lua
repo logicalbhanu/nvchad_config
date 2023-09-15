@@ -73,8 +73,9 @@ local plugins = {
     end,
   },
 
-  -- to provide surrounding change syntax
-  { "tpope/vim-surround", lazy=false },
+  -- to provide change surround syntax with repetition
+  { "tpope/vim-surround", lazy = false, dependencies = { "tpope/vim-repeat" } },
+  { "tpope/vim-repeat"},
   -- To make a plugin not be loaded
   -- {
   --   "NvChad/nvim-colorizer.lua",
