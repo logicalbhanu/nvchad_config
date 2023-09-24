@@ -34,6 +34,7 @@ M.ui = {
       { "  Bookmarks", "Spc m a", "Telescope marks" },
       { "  Themes", "Spc t t", "Telescope themes" },
       { "  Mappings", "Spc c h", "NvCheatsheet" },
+      { "  Sessions", "Spc S l", "List sessions" },
     },
   },
 }

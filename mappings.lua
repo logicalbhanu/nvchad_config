@@ -149,6 +149,31 @@ M.nvterm = {
     },
   },
 }
+
+M.spectacle = {
+  n = {
+
+    ["<leader>Sl"] = {
+      function()
+        require("spectacle").SpectacleTelescope()
+      end,
+      "[S]essions [l]ist",
+    },
+    ["<leader>Ss"] = {
+      function()
+        require("spectacle").SpectacleSave()
+      end,
+      "[S]essions [s]ave",
+    },
+    ["<leader>Sn"] = {
+      function()
+        require("spectacle").SpectacleSaveAs()
+      end,
+      "[S]essions save as [n]ew session",
+    },
+  },
+}
+
 -- more keybinds!
 -- search core.mappings for more info on defaults
 -- keymaps
