@@ -31,8 +31,11 @@ end
 
 -- lspconfig.pyright.setup { blabla}
 
--- setting up pylsp
+-- adding lsp's here over which i want more control
+-- setting up core functions of lsp's
 local utils = require "core.utils"
+
+-- adding custom_attach for separate on_attach functionalities.
 local custom_attach = function(client, bufnr)
   client.server_capabilities.documentFormattingProvider = true
   client.server_capabilities.documentRangeFormattingProvider = true
@@ -48,12 +51,14 @@ local custom_attach = function(client, bufnr)
   end
 end
 
--- to enable the capabilities via nvim-cmp use this
--- note that only one can be enabled with the default
--- by vim or the one by cmp, and i found nvim-cmp capabilities
+-- to enable the capabilities via nvim-cmp use this,
+-- note that only one type of capabilities can be enabled 
+-- either the one comes as the "default" in vim or the one
+-- provided by cmp, and i found nvim-cmp capabilities
 -- inferior to the default one of vim.
 --M.capabilities = require("cmp_nvim_lsp").default_capabilities()
 
+-- setting up pylsp here
 lspconfig.pylsp.setup {
   on_attach = custom_attach,
   settings = {
