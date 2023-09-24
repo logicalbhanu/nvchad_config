@@ -22,25 +22,25 @@ M.general = {
     ["<S-t>"] = { ":b#<cr>", desc = "last used buffer" },
 
     -- changing deafault workspace MappingsTable
-    ["<leader>sa"] = {
+    ["<leader>Wa"] = {
       function()
         vim.lsp.buf.add_workspace_folder()
       end,
-      "Add work[S]pace folder",
+      "[a]dd [W]orkspace folder",
     },
 
-    ["<leader>sr"] = {
+    ["<leader>Wr"] = {
       function()
         vim.lsp.buf.remove_workspace_folder()
       end,
-      "Remove work[S]pace folder",
+      "[r]emove [W]orkspace folder",
     },
 
-    ["<leader>sl"] = {
+    ["<leader>Wl"] = {
       function()
         print(vim.inspect(vim.lsp.buf.list_workspace_folders()))
       end,
-      "List work[S]pace folders",
+      "[l]ist [W]orkspace folders",
     },
 
     -- changing default which keymaps
@@ -174,6 +174,17 @@ M.spectacle = {
   },
 }
 
+M.project = {
+  n = {
+
+    ["<leader>fp"] = {
+      function()
+        require("telescope").extensions.projects.projects {}
+      end,
+      "[f]ind [p]rojects",
+    },
+  },
+}
 -- more keybinds!
 -- search core.mappings for more info on defaults
 -- keymaps
