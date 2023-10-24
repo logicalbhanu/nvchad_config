@@ -56,6 +56,7 @@ local plugins = {
       "nvim-lua/plenary.nvim",
       "nvim-telescope/telescope.nvim",
     },
+    opts = { session_dir = "/Users/bhanu/.local/state/nvim/sessions/" },
   },
   -- Plugin to set current working directory to
   -- project root
