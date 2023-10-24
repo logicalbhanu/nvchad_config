@@ -74,6 +74,16 @@ local plugins = {
     end,
   },
 
+  -- get some good context hint on top
+  {
+    "nvim-treesitter/nvim-treesitter-context",
+    event = "BufEnter",
+
+    config = function()
+      require("treesitter-context").setup()
+    end,
+  },
+
   -- to provide change surround syntax with repetition
   { "tpope/vim-surround", lazy = false, dependencies = { "tpope/vim-repeat" } },
   { "tpope/vim-repeat"},
