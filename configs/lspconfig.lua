@@ -81,7 +81,7 @@ lspconfig.pylsp.setup {
         pyflakes = { enabled = false },
         pycodestyle = { enabled = false },
         -- type checker
-        pylsp_mypy = { enabled = true },
+        pylsp_mypy = { enabled = false },
         -- auto-completion options
         jedi_completion = { fuzzy = true },
         -- import sorting
