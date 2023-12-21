@@ -84,6 +84,26 @@ local plugins = {
     end,
   },
 
+  -- to manage csv files
+  {
+    "cameron-wags/rainbow_csv.nvim",
+    config = true,
+    ft = {
+      "csv",
+      "tsv",
+      "csv_semicolon",
+      "csv_whitespace",
+      "csv_pipe",
+      "rfc_csv",
+      "rfc_semicolon",
+    },
+    cmd = {
+      "RainbowDelim",
+      "RainbowDelimSimple",
+      "RainbowDelimQuoted",
+      "RainbowMultiDelim",
+    },
+  },
   -- to provide change surround syntax with repetition
   { "tpope/vim-surround", lazy = false, dependencies = { "tpope/vim-repeat" } },
   { "tpope/vim-repeat" },
