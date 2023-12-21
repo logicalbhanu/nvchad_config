@@ -43,6 +43,15 @@ M.general = {
       "[l]ist [W]orkspace folders",
     },
 
+    -- this is to show sources in floating diagnostic, which is not
+    -- available in the core config
+    ["<leader>lf"] = {
+      function()
+        vim.diagnostic.open_float { border = "rounded", source = true }
+      end,
+      "Floating diagnostic",
+    },
+
     -- changing default which keymaps
     ["<leader>ka"] = {
       function()
