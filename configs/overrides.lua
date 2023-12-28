@@ -69,16 +69,16 @@ M.nvterm = {
     list = {},
     type_opts = {
       float = {
-        relative = 'editor',
+        relative = "editor",
         row = 0.12,
         col = 0.15,
         width = 0.7,
         height = 0.7,
         border = "single",
       },
-      horizontal = { location = "rightbelow", split_ratio = .3, },
-      vertical = { location = "rightbelow", split_ratio = .5 },
-    }
+      horizontal = { location = "rightbelow", split_ratio = 0.3 },
+      vertical = { location = "rightbelow", split_ratio = 0.5 },
+    },
   },
   behavior = {
     autoclose_on_quit = {
