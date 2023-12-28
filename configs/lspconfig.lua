@@ -80,6 +80,8 @@ lspconfig.pylsp.setup {
         pylint = { enabled = false, executable = "pylint" },
         pyflakes = { enabled = false },
         pycodestyle = { enabled = false },
+        mccabe = { enabled = false },
+        flake8 = { enabled = true },
         -- type checker
         pylsp_mypy = { enabled = false },
         -- auto-completion options
@@ -87,6 +89,7 @@ lspconfig.pylsp.setup {
         -- import sorting
         pyls_isort = { enabled = true },
       },
+      configurationSources = { "flake8" },
     },
   },
   flags = {
