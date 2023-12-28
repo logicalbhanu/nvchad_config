@@ -34,7 +34,6 @@ M.mason = {
     "clang-format",
 
     -- python stuff
-    "pyre",
   },
 }
 

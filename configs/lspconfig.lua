@@ -3,7 +3,7 @@ local on_attach = configs.on_attach
 local capabilities = configs.capabilities
 
 local lspconfig = require "lspconfig"
-local servers = { "html", "cssls", "clangd", "pyre" }
+local servers = { "html", "cssls", "clangd" }
 
 for _, lsp in ipairs(servers) do
   lspconfig[lsp].setup {
@@ -52,7 +52,7 @@ local custom_attach = function(client, bufnr)
 end
 
 -- to enable the capabilities via nvim-cmp use this,
--- note that only one type of capabilities can be enabled 
+-- note that only one type of capabilities can be enabled
 -- either the one comes as the "default" in vim or the one
 -- provided by cmp, and i found nvim-cmp capabilities
 -- inferior to the default one of vim.
