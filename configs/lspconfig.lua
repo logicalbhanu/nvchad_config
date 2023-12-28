@@ -83,7 +83,7 @@ lspconfig.pylsp.setup {
         mccabe = { enabled = false },
         flake8 = { enabled = true },
         -- type checker
-        pylsp_mypy = { enabled = false },
+        pylsp_mypy = { enabled = true },
         -- auto-completion options
         jedi_completion = { fuzzy = true },
         -- import sorting
